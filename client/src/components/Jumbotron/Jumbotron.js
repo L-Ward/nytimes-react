@@ -9,11 +9,11 @@ const Jumbotron = props => (
                 &nbsp;New York Times Search
         </h1>
         </strong>
-        <div className='row links justify-content-center'>
-            <a href='/'>Home</a>
+        <div className='row justify-content-center'>
+            <a className='links' href='/'>Home</a>
             &nbsp;
             &nbsp;
-            <a href='/saved'>Saved</a>
+            <a className='links' href='/saved'>Saved</a>
         </div>
     </div>
 )
