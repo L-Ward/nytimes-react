@@ -25,7 +25,7 @@ loadArticles = (search, startYear, endYear) => {
         return (
             <div>
                 <Form loadArticles={this.loadArticles}/>
-                <Results articles={this.state.articles}/>
+                <Results saved={false} articles={this.state.articles}/>
             </div>
         );
     }

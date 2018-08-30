@@ -55,20 +55,12 @@ class Form extends React.Component {
                             <input type="text" className="form-control" id="searchTerm" value={this.state.searchTerm} onChange={this.handleSearchChange}></input>
                         </div>
                         <div className="form-group">
-                            <label>Number of Records to Retrieve:</label>
-                            <select type="text" className="form-control" id="numRecords" defaultValue={5}>
-                                <option value="1">1</option>
-                                <option value="5">5</option>
-                                <option value="10">10</option>
-                            </select>
-                        </div>
-                        <div className="form-group">
-                            <label>Start Year (optional):</label>
+                            <label>Start Year:</label>
 
                             <input type="text" className="form-control" id="startYear" value={this.state.startYear} onChange={this.handleStartYearChange}></input>
                         </div>
                         <div className="form-group">
-                            <label>End Year (optional):</label>
+                            <label>End Year:</label>
                             <input type="text" className="form-control" id="endYear" value={this.state.endYear} onChange={this.handleEndYearChange}></input>
                         </div>
                         <button type="submit" className="btn btn-secondary" id="runSearch" onClick={(event)=>this.handleSubmit(event, this.state.searchTerm, this.state.startYear, this.state.endYear)}>
