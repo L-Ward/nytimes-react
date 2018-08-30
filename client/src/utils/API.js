@@ -16,16 +16,16 @@ export default {
 
     // Get saved articles
     getSavedArticles: function () {
-        return axios.get('/saved')
+        return axios.get('/savedArticles')
     },
 
     // Post saved article
     saveArticle: function (articleData) {
-        return axios.post('/saved', articleData);
+        return axios.post('/savedArticles', articleData);
     },
 
     // Delete saved article
     removeArticle: function (articleData) {
-        return axios.delete('/saved', {data: articleData});
+        return axios.delete('/savedArticles', {data: articleData});
     }
 }
