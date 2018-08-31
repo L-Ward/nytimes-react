@@ -4,7 +4,7 @@ const router = require("express").Router();
 const articleController = require('../controllers/articleController')
 
 // Saved Routes
-router.route('/savedArticles')
+router.route('/saved')
 .get(articleController.findAll)
 .post(articleController.create)
 .delete(articleController.remove)
