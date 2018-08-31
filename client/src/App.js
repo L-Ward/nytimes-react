@@ -9,16 +9,16 @@ import Jumbotron from './components/Jumbotron';
 import Footer from './components/Footer'
 
 const App = () => (
-  <div className="container">
-    <Jumbotron />
-    <Router>
+  <Router>
+    <div className="container">
+      <Jumbotron />
       <Switch>
         <Route exact path='/' component={Home} />
         <Route exact path='/saved' component={Saved} />
       </Switch>
-    </Router>
-    <Footer />
-  </div>
+      <Footer />
+    </div>
+  </Router>
 )
 
 export default App;

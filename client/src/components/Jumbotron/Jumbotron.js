@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import "./Jumbotron.css";
 
 const Jumbotron = props => (
@@ -10,10 +11,10 @@ const Jumbotron = props => (
         </h1>
         </strong>
         <div className='row justify-content-center'>
-            <a className='links' href='/'>Home</a>
+            <Link className='links' to='/'>Home</Link>
             &nbsp;
             &nbsp;
-            <a className='links' href='/saved'>Saved</a>
+            <Link className='links' to='/saved'>Saved</Link>
         </div>
     </div>
 )
